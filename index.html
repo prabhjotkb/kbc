@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		button{
+			border:0px;
+			height:80px;
+			width:80px;
+			border-radius: 50px;
+			position:relative;
+			top:520px;
+			background:orange;
+			font-weight:bold;
+			font-family: tahoma;
+			color:black;
+			box-shadow:0px 0px 20px lime;
+		}
+		.help{
+			font-family: tahoma;
+			width:800px;
+			height:600px;
+			background:#390F4E;
+			position: absolute;
+			left:300px;
+			top:10px;
+			display:none;
+			color:white;
+			border-radius: 20px;
+			border:5px solid orange;
+		}
+		.help button
+		{
+			position: relative;
+			top:10px;
+			right:10px;
+			height:40px;
+			box-shadow:0px 0 0 0;
+			width:40px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body style="background:url(image/kbc.jpg); background-size:100% 690%;">
+<iframe src="audio/intro.mp3" allow="autoplay" style="display: none;"></iframe>
+<center>
+	<button><a href="game.html">Play</a></button>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button id="helpbtn" onclick="help()">Help</button>
+	
+	<div class="help" id="help">
+		<button id="helpclose" onclick="helpDisable()" style="float:right;"><b> &times </b></button>
+			<br><br><br><hr>
+			<h4>
+				<b>	Well come to the "Who wants to be a millioniere"</b>
+			</h4>
+			<p>
+				The rules of the game is simple . There will be 15 questions one by one which you have to answer them. you can give answers by clicking on options or by voice commands . As you give right answers , you will won money as shown in the right hand side of the game. For your assist there are two life-lifes available . 
+				<br><br>
+				<img src="image/50.png">  <img src="image/ap.png">
+				<br><br>
+				First is 50-50 . by using this life-line , two wrong options will be vanished . use this life-line if you have confussion between two options.
+				<br><br>
+				Another life is audience's pole . here audience will be answering your question . by using this life line , there will be a chart which shows you the probiblity of a option to be right answer.<br><br>
+				<b>Voice commands for answering .</b>
+				<ul>
+					<li>For A = A final answer</li>
+					<li>For B = B final answer</li>
+					<li>For C = C final answer</li>
+					<li>For D = D final answer</li>
+				</ul>
+
+	</div>
+</center>
+</body>
+<script>
+	
+
+var helpBoard = document.getElementById('help');
+var helpBtn = document.getElementById('helpbtn');
+var helpClose = document.getElementById('helpclose');
+
+function help(){
+helpBoard.style.display ='block';
+}
+
+function helpDisable(){
+helpBoard.style.display ='none';
+}
+
+
+
+
+</script>
+</html>
+
+
+
+
+
